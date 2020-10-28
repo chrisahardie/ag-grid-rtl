@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import PassingGrid from './PassingGrid';
+import FailingGrid from './FailingGrid';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Grid that passes test</h1>
+      <PassingGrid />
+      <h1>Grid that fails test</h1>
+      <FailingGrid />
+    </>
   );
 }
 
