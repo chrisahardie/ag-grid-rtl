@@ -44,9 +44,6 @@ function FailingGrid() {
     {
       headerCheckboxSelection: true,
       checkboxSelection: true,
-      maxWidth: 50,
-      suppressSizeToFit: true,
-      cellStyle: { paddingLeft: "15px" },
     },
     { headerName: t("ccn"), field: "ccn" },
     {

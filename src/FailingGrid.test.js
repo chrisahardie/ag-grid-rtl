@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import FailingGrid from './FailingGrid';
 
 test('grid that fails test', async () => {
-  render(<App />);
-  const linkElement = await screen.findByText(/hank/i);
-  expect(linkElement).toBeInTheDocument();
+  render(<FailingGrid />);
+  const consigneeName = await screen.findByText(/hank/i);
+  expect(consigneeName).toBeInTheDocument();
 });
